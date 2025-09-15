@@ -2,41 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Professional Executive Landing Page Design System */
 
 @layer base {
   :root {
+    /* Professional Corporate Color Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Navy Professional Primary */
+    --primary: 215 85% 25%;
     --primary-foreground: 210 40% 98%;
+    --primary-light: 215 85% 35%;
+    --primary-dark: 215 85% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gold Accents */
+    --accent: 45 100% 60%;
+    --accent-foreground: 215 25% 15%;
+    --accent-light: 45 100% 70%;
+    --accent-muted: 45 50% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Professional Grays */
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 215 25% 15%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 15% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 15% 90%;
+    --input: 215 15% 90%;
+    --ring: 215 85% 25%;
 
-    --radius: 0.5rem;
+    /* Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 100%);
+
+    /* Professional Shadows */
+    --shadow-professional: 0 10px 40px -10px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.08);
+    --shadow-accent: 0 8px 30px -8px hsl(var(--accent) / 0.3);
+
+    /* Professional Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +120,41 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-section {
+    background: var(--gradient-section);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .shadow-professional {
+    box-shadow: var(--shadow-professional);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
   }
 }
