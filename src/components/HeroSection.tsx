@@ -22,11 +22,9 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button onClick={() => document.getElementById('about')?.scrollIntoView({
-              behavior: 'smooth'
-            })} className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent-light transition-smooth shadow-accent">
+              <a href="https://dass.ca/" target="_blank" rel="noopener noreferrer" className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent-light transition-smooth shadow-accent inline-block text-center">
                 Learn More
-              </button>
+              </a>
               
             </div>
           </div>
