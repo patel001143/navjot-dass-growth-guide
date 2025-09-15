@@ -1,4 +1,4 @@
-import headshotImage from "@/assets/navjot-dass-headshot.jpg";
+import facilityImage from "@/assets/jdass-facility.jpg";
 
 const HeroSection = () => {
   return (
@@ -42,10 +42,10 @@ const HeroSection = () => {
           {/* Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-professional border-4 border-accent">
+              <div className="w-80 h-60 lg:w-96 lg:h-72 rounded-lg overflow-hidden shadow-professional border-4 border-accent">
                 <img 
-                  src={headshotImage} 
-                  alt="Navjot Dass - Managing Director of JDass Group"
+                  src={facilityImage} 
+                  alt="JDass Group facility in Vaughan, Ontario - Industrial complex representing decades of Canadian business excellence"
                   className="w-full h-full object-cover"
                 />
               </div>
