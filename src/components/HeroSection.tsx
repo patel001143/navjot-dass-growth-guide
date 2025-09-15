@@ -1,8 +1,6 @@
 import facilityImage from "@/assets/jdass-facility.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="min-h-screen flex items-center gradient-hero relative overflow-hidden">
+  return <section className="min-h-screen flex items-center gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-primary/10"></div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -24,18 +22,12 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button 
-                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent-light transition-smooth shadow-accent"
-              >
+              <button onClick={() => document.getElementById('about')?.scrollIntoView({
+              behavior: 'smooth'
+            })} className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent-light transition-smooth shadow-accent">
                 Learn More
               </button>
-              <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground hover:text-primary transition-smooth"
-              >
-                Get In Touch
-              </button>
+              
             </div>
           </div>
           
@@ -43,11 +35,7 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-60 lg:w-96 lg:h-72 rounded-lg overflow-hidden shadow-professional border-4 border-accent">
-                <img 
-                  src={facilityImage} 
-                  alt="JDass Group facility in Vaughan, Ontario - Industrial complex representing decades of Canadian business excellence"
-                  className="w-full h-full object-cover"
-                />
+                <img src={facilityImage} alt="JDass Group facility in Vaughan, Ontario - Industrial complex representing decades of Canadian business excellence" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full flex items-center justify-center shadow-accent">
                 <span className="text-accent-foreground font-bold text-sm">JDass</span>
@@ -57,8 +45,6 @@ const HeroSection = () => {
           
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
