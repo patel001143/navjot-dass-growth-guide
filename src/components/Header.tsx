@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import jdassLogo from "@/assets/jdass-logo.webp";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,9 +20,11 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-center">
-          <div className="text-xl font-bold text-primary">
-            Navjot Dass
-          </div>
+          <img 
+            src={jdassLogo} 
+            alt="JDass Group Logo" 
+            className="h-8 w-auto"
+          />
         </div>
       </nav>
     </header>
