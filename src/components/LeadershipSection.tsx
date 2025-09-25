@@ -61,6 +61,32 @@ const LeadershipSection = () => {
             </div>
           </div>
           
+          <div className="mt-12 text-center">
+            <a 
+              href="https://www.linkedin.com/in/navjot-dass-a9b20b1a8/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-card hover:bg-accent transition-smooth p-8 rounded-lg shadow-card hover:shadow-professional group"
+            >
+              <div className="flex items-center justify-center gap-4">
+                <svg className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-smooth" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <div className="text-left">
+                  <h3 className="text-2xl font-bold text-primary group-hover:text-primary-foreground transition-smooth">
+                    LinkedIn
+                  </h3>
+                  <p className="text-sm text-muted-foreground group-hover:text-primary-foreground/80 transition-smooth">
+                    Professional Network
+                  </p>
+                  <p className="text-sm text-primary group-hover:text-primary-foreground transition-smooth font-medium">
+                    [LinkedIn Profile]
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
         </div>
       </div>
     </section>
